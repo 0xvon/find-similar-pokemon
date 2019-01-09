@@ -14,3 +14,10 @@ for i in imgs:
     img = np.array(img)
     img = img.ravel()
     datasets.append(img)
+
+#自身の画像の読み込み
+my_img = Image.open("./my_image")
+my_img = my_img.convert("L")
+my_img = my_img.resize((100, 100))
+my_img = np.array(my_img)
+my_img = my_img.revel()
